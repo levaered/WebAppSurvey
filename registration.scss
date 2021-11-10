@@ -1,0 +1,63 @@
+@import "variebles";
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(img/bgc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+#signup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#sign{
+    width: 36%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#signform{
+    display: flex;
+    flex-direction: column;
+    input{
+        margin-top: 25px;
+        border: none;
+        border-radius: 30px;
+        height: 72px;
+        outline: 0;
+        background: $signup;
+        color: $w;
+        text-align: center;
+        font-size: 1.3vw;
+    }
+}
+
+#signtext{
+    font-weight: 600;
+    font-size: 2vw;
+    text-align: center;
+    color:$w;
+}
+
+#regbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: $w;
+    height: 72px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+}
