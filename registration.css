@@ -140,6 +140,10 @@ table {
   font-weight: 600;
 }
 
+#leftForm #formbtn:hover {
+  cursor: pointer;
+}
+
 #nameFacebook {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,6 +186,10 @@ table {
   border-radius: 25px;
 }
 
+#facebook:hover {
+  cursor: pointer;
+}
+
 #google {
   width: 15%;
   height: 100%;
@@ -196,5 +204,9 @@ table {
           align-items: center;
   background-color: white;
   border-radius: 25px;
+}
+
+#google:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=registration.css.map */

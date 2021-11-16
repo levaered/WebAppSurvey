@@ -120,6 +120,10 @@ table {
         border: none;
         width: 80%;
         font-weight: 600;
+
+        &:hover{
+            cursor:pointer;
+        }
     }
 }
 #nameFacebook{
@@ -142,6 +146,10 @@ table {
     align-items: center;
     background-color: #7583CA;
     border-radius: 25px;
+
+    &:hover{
+        cursor:pointer;
+    }
 }
 
 #google{
@@ -152,4 +160,8 @@ table {
     align-items: center;
     background-color: white;
     border-radius: 25px;
+    
+    &:hover{
+        cursor:pointer;
+    }
 }
