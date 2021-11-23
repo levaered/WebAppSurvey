@@ -1,0 +1,29 @@
+{% extends 'sign_up/sign.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}   
+{% block name %}Login{% endblock %}  
+{% block  inputs %}                         
+    <div id="nameFacebook">
+        <input class="text" type="text" placeholder="Email or login">
+        <div id="facebook">
+            <img src="{%static 'sign_up/img/Facebook.svg' %}" alt="Facebook">
+        </div>
+    </div>
+    <div id="emailGoogle">
+        <input  class="text" type="text" placeholder="Password">
+        <div id = "google">
+            <img src="{%static 'sign_up/img/google.svg' %}" alt="Google">
+        </div>
+    </div>
+    <div id="links">
+        <input type="button" value="Continue" id="formbtn">
+
+        <a href="">Forgot password?</a>
+
+        <a href="{% url 'sign' %}">Sign up</a>
+    </div>
+    
+     
+
+{% endblock  %}
+{% block leftForm %}loginLeftForm{% endblock  %}

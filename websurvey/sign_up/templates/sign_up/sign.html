@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sign up{% endblock  %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="{% static  'sign_up/style/registration.css' %}">
+</head>
+<body>
+    <div id="back"> 
+        <a href="{% url 'lending' %}" >
+            <img src="{%static 'sign_up/img/back.svg' %}" alt="back">
+        </a>
+    </div>
+    <div id = "wrapper" style='background-image: url("../../static/sign_up/img/background.png")'>
+        
+        <div id = "content">
+            <div id = "formWidth">
+                <div id = "formHeight">
+                    <div id = "form">
+                        <div id = "{% block leftForm %}leftForm{% endblock %}">
+                            <div id = "formText">{% block name %}Sign up{% endblock  %}</div>
+                            {% block  inputs %}
+                            <div id="nameFacebook">
+                                <input class="text" type="text" placeholder="Name">
+                                <div id="facebook">
+                                    <img src="{%static 'sign_up/img/Facebook.svg' %}" alt="Facebook">
+                                </div>
+                            </div>
+                            <div id="emailGoogle">
+                                <input  class="text" type="text" placeholder="Email">
+                                <div id = "google">
+                                    <img src="{%static 'sign_up/img/google.svg' %}" alt="Google">
+                                </div>
+                            </div>
+                                
+                                
+                                    <input  class="text" type="password" placeholder="Password">
+                                    <input  class="text" type="password" placeholder="Confirm password">
+                                    <input type="button" value="Continue" id="formbtn">
+
+                            {% endblock  %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

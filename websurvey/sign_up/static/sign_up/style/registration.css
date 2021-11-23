@@ -1,0 +1,286 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+#content {
+  width: 1230px;
+  height: 100vh;
+}
+
+#formWidth {
+  width: 490px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#formHeight {
+  width: 100%;
+  height: 555px;
+}
+
+#form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#formText {
+  font-size: 34px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  width: 85%;
+}
+
+#loginLeftForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 70%;
+}
+
+#loginLeftForm input {
+  width: 72%;
+  height: 68px;
+  background: linear-gradient(95.73deg, rgba(217, 217, 217, 0.05) -41.86%, rgba(255, 255, 255, 0) 124.66%), #282828;
+  outline: none;
+  border: 0.5px rgba(255, 255, 255, 0.411) solid;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+}
+
+#loginLeftForm .text {
+  padding-left: 40px;
+}
+
+#loginLeftForm #formbtn {
+  background-color: white;
+  color: #14457C;
+  border: none;
+  width: 80%;
+  font-weight: 600;
+}
+
+#loginLeftForm #formbtn:hover {
+  cursor: pointer;
+}
+
+#leftForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+#leftForm input {
+  width: 72%;
+  height: 68px;
+  background: linear-gradient(95.73deg, rgba(217, 217, 217, 0.05) -41.86%, rgba(255, 255, 255, 0) 124.66%), #282828;
+  outline: none;
+  border: 0.5px rgba(255, 255, 255, 0.411) solid;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+}
+
+#leftForm .text {
+  padding-left: 40px;
+}
+
+#leftForm #formbtn {
+  background-color: white;
+  color: #14457C;
+  border: none;
+  width: 80%;
+  font-weight: 600;
+}
+
+#leftForm #formbtn:hover {
+  cursor: pointer;
+}
+
+#nameFacebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#emailGoogle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#facebook {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #7583CA;
+  border-radius: 25px;
+}
+
+#facebook:hover {
+  cursor: pointer;
+}
+
+#google {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#google:hover {
+  cursor: pointer;
+}
+
+#links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#links a {
+  width: 80%;
+  margin-top: 15px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+#back {
+  position: fixed;
+  top: 30px;
+  left: 45px;
+  padding: 10px 23px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+/*# sourceMappingURL=registration.css.map */
